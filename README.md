@@ -4,11 +4,15 @@
 
 * php -S localhost:8000 -t public
 
+## Crear Base de datos local MySQL
+
+* En la config la cual deje 'expuesta' ya que es un test se llama 'agency' si quieres ponerle otro nombre redefinelo en el '.env' file
+
 ## Actualizar Dependencias
 
 * composer update
 
-## Generar las tablas en la base de datos
+## Generar las tablas y campos en la base de datos
 
 * php artisan migrate
 
@@ -16,6 +20,15 @@
 
 * php artisan db:seed
 
+### Endpoints
+
+* Viajero / json
+
+'POST': 'viajero',
+'GET': 'viajero',
+'GET': 'viajero/id',
+'DELETE': 'viajero/id',
+'PUT': 'viajero/id'
 
 # Dev
 
